@@ -14,6 +14,7 @@ a {
 .top-right-pic img {
     width: 100%;
     object-fit: fill;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body {
@@ -243,4 +244,46 @@ body {
 
 #cv {
     height: 40px;
+}
+
+@media only screen and (max-width: 1024px) {  
+    html,body{
+        overflow-x: hidden;
+    }
+    .top-container, .bottom-container, .final-container{
+        width: 100%;
+    }
+    .hero-container, .header, .bottom-container{
+        padding: 4%;
+    }
+    .mid-tiles{
+        gap: 2%;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .top-container, .final-container, .bottom-container{
+        width: 100%;
+    }
+    .hero-container, .header, .final-container, .bottom-container{
+        padding: 4%;
+    }
+    .hero-container{
+        display: block;
+    }
+    .mid-tiles{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .mid-title{
+        text-align: center;
+    }
+    .final-container{
+        gap: 3rem;
+    }
 }
