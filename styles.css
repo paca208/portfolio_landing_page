@@ -275,6 +275,12 @@ body {
     .hero-container{
         display: block;
     }
+    .desc-section{
+        text-align: center;
+    }
+    .top-right-pic{
+        margin-left: 0%;
+    }
     .mid-tiles{
         flex-direction: column;
         align-items: center;
