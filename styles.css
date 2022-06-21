@@ -138,6 +138,15 @@ body {
     gap: 82px;
     margin-bottom: 10%;
 }
+progress {
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+}
+progress:hover:before {
+    display: inline;
+    content: attr();
+}
 
 .html, .css, .js, .python {
     display: flex;
@@ -156,9 +165,35 @@ body {
     border-radius: 25px;
     padding: 16px;
 }
-
+.rps, .sorter{
+    display: flex;
+    flex-direction: column;
+    width: 165px;
+}
+.rps .heroicon, .sorter .heroicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: auto;
+    margin: 0 auto auto;
+    border: 5px solid #f8c408;
+    border-radius: 25px;
+    padding: 16px;
+}
+.rps .heroicon:hover, .sorter .heroicon:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    cursor: pointer;
+    transition: 1s ease;
+}
+.icon{
+    width: 35px;
+}
 .subtext {
     display: flex;
+    flex-direction: column;
     color: #1f2937;
     margin-top: 10px;
     border: 5px;
@@ -168,6 +203,15 @@ body {
 .bottom-container {
     display: flex;
     justify-content: center;
+}
+.iconborder{
+    border: 3px solid #f8c408;
+    border-radius: 25px;
+    padding: 6px;
+    margin-left: -10px;
+    margin-top: 6px;
+    border-left: solid;
+    border-right: solid;
 }
 
 .quote {
@@ -189,6 +233,33 @@ body {
     display: flex;
     align-self: flex-end;
     margin-bottom: 15%;
+}
+div.track, div.bar {
+    box-sizing: border-box;
+    position: relative;
+}
+ 
+div.progress {
+    align-self: center;
+    width: 104px;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 21px;
+    border-radius: 15px;
+    border: solid 2px #4e4e4e;
+}
+ 
+div.bar {
+    height: 11px;
+    width: 20px;
+    background-color: #00ff15;
+    position: relative;
+    border-radius:30px;
+    margin-left: 2px;
+    margin-right: 2px;
+    top: 3px;
+    float: left;
+    clear: top;
 }
 
 .bottom-container {
@@ -241,6 +312,41 @@ body {
     padding: 30px;
     margin-top: auto;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 113px;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    text-align: center;
+    border-radius: 11px;
+    padding: 6px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -57px;
+    font-size: 0.85rem;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
 
 #cv {
     height: 40px;
