@@ -169,6 +169,7 @@ progress:hover:before {
     display: flex;
     flex-direction: column;
     width: 165px;
+    align-items: center;
 }
 .rps .heroicon, .sorter .heroicon{
     display: flex;
@@ -189,7 +190,7 @@ progress:hover:before {
     transition: 1s ease;
 }
 .icon{
-    width: 35px;
+    width: 34px;
 }
 .subtext {
     display: flex;
@@ -208,7 +209,6 @@ progress:hover:before {
     border: 3px solid #f8c408;
     border-radius: 25px;
     padding: 6px;
-    margin-left: -10px;
     margin-top: 6px;
     border-left: solid;
     border-right: solid;
