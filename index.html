@@ -14,13 +14,18 @@
             <div class="header">
                 <div class="header-logo"><a href="mailto:patrik.blazek1@gmail.com"><img src="./img/pacalogo.png" alt="Header logo"></a> </div>
                 <div class="header-links">
-                <a href="./dloads/tridicka.py">Python třídící skript</a>
+                    <div class="dropdown">
+                        <img src="./img/Czech-Republic.png" onclick="drop()" class="dropbtn"></img>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="./en.html"><img src="./img/United-Kingdom.png" class="dropdown-flag"></a>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="hero-container">
                 <div class="desc-section">
                     <div class="top-left-text">
-                        Ahoj! Jmenuju se Patrik.
+                        Ahoj! Jmenuju se Patrik
                     </div>
                     <div class="top-left-desc">
                         Jsem začátečník programátor a web developer se zájmem o Python, HTML, CSS a Javascript.
@@ -90,7 +95,7 @@ Věnuji se sebevzdělávání ve zmíněných jazycích a menším individuáln�
                 <div class="rps">
                     <a href="https://paca208.github.io/rps/"><img class="heroicon" src="./img/logo.png"></a>
                     <div class="subtext" style="font-weight: 700;">LoL RPS</div>
-                    <div class="subtext"> Jednoduchá hra založená na Kámen, nůžky, papír. Stylizováno dle populární PC hry League of Legends. Html, CSS, Javascript.<br><span style="font-weight: 700;"> Využito: </span></div>
+                    <div class="subtext"> Jednoduchá hra založená na Kámen, nůžky, papír. Stylizováno dle populární PC hry League of Legends.<br><span style="font-weight: 700;"> Využito: </span></div>
                     <div class="iconborder">
                     <img class="icon" src="./img/htmlimg.png">
                     <img class="icon" src="./img/cssimg.png">
@@ -106,6 +111,16 @@ Věnuji se sebevzdělávání ve zmíněných jazycích a menším individuáln�
                         <img class="icon" src="./img/pythonimg.png">
                     </div>
                     </div>
+                <div class="sketch">
+                    <a href="https://paca208.github.io/sketch/"><img class="heroicon" src="./img/sketch.png"></a>
+                    <div class="subtext" style="font-weight: 700;">Sketchbook</div>
+                    <div class="subtext"> Nastavitelná plocha pro malování v Javascriptu.<br><span style="font-weight: 700;"> Využito: </span></div>
+                    <div class="iconborder">
+                        <img class="icon" src="./img/htmlimg.png">
+                        <img class="icon" src="./img/cssimg.png">
+                        <img class="icon" src="./img/jsimg.png">
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -123,5 +138,6 @@ Věnuji se sebevzdělávání ve zmíněných jazycích a menším individuáln�
     <div class="footer">
         Copyright © Patrik Blažek 2022
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>

@@ -165,24 +165,24 @@ progress:hover:before {
     border-radius: 25px;
     padding: 16px;
 }
-.rps, .sorter{
+.rps, .sorter, .sketch{
     display: flex;
     flex-direction: column;
-    width: 165px;
+    width: 179px;
     align-items: center;
 }
-.rps .heroicon, .sorter .heroicon{
+.rps .heroicon, .sorter .heroicon, .sketch .heroicon{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 165px;
+    width: 179px;
     height: auto;
     margin: 0 auto auto;
     border: 5px solid #f8c408;
     border-radius: 25px;
     padding: 16px;
 }
-.rps .heroicon:hover, .sorter .heroicon:hover{
+.rps .heroicon:hover, .sorter .heroicon:hover, .sketch .heroicon:hover{
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -212,6 +212,8 @@ progress:hover:before {
     margin-top: 6px;
     border-left: solid;
     border-right: solid;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .quote {
@@ -346,7 +348,30 @@ div.bar {
     border-style: solid;
     border-color: black transparent transparent transparent;
   }
-
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn{
+      width: 36px;
+      height: auto;
+      cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f2937;
+    box-shadow: 3px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 36px;
+    height: 36px;
+  }
+  .dropdown-flag{
+      width: 36px;
+      height: auto;
+  }
+  .show {
+      display:block;
+    }
 
 #cv {
     height: 40px;
